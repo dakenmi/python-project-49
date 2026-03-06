@@ -1,0 +1,45 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "brain-games"
+version = "0.5.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "prompt" },
+    { name = "pyprimer" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/43/3b/e8f559dd90c66343259e6b9ba121381d36e539c11604378acc26dee3231e/brain_games-0.5.1.tar.gz", hash = "sha256:35758cd6415c777d21301e1fd7290d15e1e5a4e38a60008d2c432a0257b8c203", size = 4251, upload-time = "2022-05-21T14:01:25.325Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fd/93/4b43f737de8b77577be3eee3505c12da4c0235d514e62c93b506c8102625/brain_games-0.5.1-py3-none-any.whl", hash = "sha256:8f16e2dc18695635c4f3da38a05ff142b74c5a6a01dc6bfe1e9f85408da3d7ae", size = 8307, upload-time = "2022-05-21T14:01:23.481Z" },
+]
+
+[[package]]
+name = "hexlet-code"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "brain-games" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "brain-games", specifier = ">=0.5.1" }]
+
+[[package]]
+name = "prompt"
+version = "0.4.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a6/f1/f550fffbdbe3ca55591d2c34f7d561ee8126a2e4f0b402a84860a31a5f68/prompt-0.4.1.tar.gz", hash = "sha256:8a7694b88f8c65188a983315e72582bf42fcc251b97042be1d2a2ad1aa0ebe0e", size = 6500, upload-time = "2017-06-05T17:01:13.381Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/de/2a/baf04fe6bef0b73666fd891db1c395813ee9691f949ae4b42500dc440adb/prompt-0.4.1-py3-none-any.whl", hash = "sha256:98527de8dc3f0aa29669a39fbffeaf578ba6654dc836f737b6a5c6f9279002b7", size = 7149, upload-time = "2017-06-05T17:01:11.702Z" },
+]
+
+[[package]]
+name = "pyprimer"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1c/81/c7ec7aa21751095c0a8ab699c8089f8075212b0bdbc8b70de3355c4e5de1/pyprimer-0.1.0.tar.gz", hash = "sha256:865d9cf6de71f13cfb8c971150b0d9ea82d783b70eb146f43afce8ec51070d7b", size = 2025, upload-time = "2020-08-07T01:58:04.102Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/52/82/8b4bf5da0fee7c88c88001cd5ab53fd39b3ba186abc7923fb9d7f543b5c1/pyprimer-0.1.0-py3-none-any.whl", hash = "sha256:81bbd8d36b04d944d5d3f50a3cbf30e2596f8fdc834d1e18d882c4aba443b52a", size = 2463, upload-time = "2020-08-07T01:58:01.385Z" },
+]
