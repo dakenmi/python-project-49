@@ -6,12 +6,11 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "brain-games>=0.5.1",
-    "prompt>=0.4.1",
-]
+    "prompt>=0.4.1",]
 
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-
+brain-even = "brain_games.scripts.brain_even:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
