@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "brain-games>=0.5.1",
+    "prompt>=0.4.1",
 ]
 
 [project.scripts]

@@ -21,10 +21,14 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "brain-games" },
+    { name = "prompt" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "brain-games", specifier = ">=0.5.1" }]
+requires-dist = [
+    { name = "brain-games", specifier = ">=0.5.1" },
+    { name = "prompt", specifier = ">=0.4.1" },
+]
 
 [[package]]
 name = "prompt"
