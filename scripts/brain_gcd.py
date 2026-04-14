@@ -1,11 +1,11 @@
 from random import randint
-from brain_games.cli import welcome_user
+from cli import welcome_user
 
 
 name = welcome_user()
 
 
-def gcd_check():
+def main():
     print(f'Find the greatest common divisor of given numbers.')
     counter = 0
     while counter < 3:
@@ -33,3 +33,4 @@ def gcd_check():
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
             break
+

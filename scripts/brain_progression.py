@@ -1,6 +1,5 @@
-from random import choice
 from random import randint
-from brain_games.cli import welcome_user
+from cli import welcome_user
 
 
 name = welcome_user()
@@ -16,7 +15,7 @@ def currentElement():
     return progression
 
 
-def progression_check():
+def main():
     print('What number is missing in the progression?')
     counter = 0
     while counter < 3:

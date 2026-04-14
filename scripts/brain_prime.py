@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.cli import welcome_user
+from cli import welcome_user
 
 
 name = welcome_user()
@@ -22,3 +22,6 @@ def prime_check():
         right_answer = 'yes' if is_prime(number) else 'no'
         if user_answer == right_answer:
             print('Correct!')
+
+def main():
+    prime_check()

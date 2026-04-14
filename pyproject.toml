@@ -1,12 +1,12 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "Brain games - серия мини игр для тренировки логики"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "brain-games>=0.5.1",
-    "prompt>=0.4.1",]
+    "prompt>=0.4.1",
+    "ruff>=0.13.1"]
 
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
@@ -15,6 +15,7 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime =  "brain_games.scripts.brain_prime:main"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
