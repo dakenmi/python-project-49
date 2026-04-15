@@ -13,7 +13,7 @@ def is_prime(n):
     return True
 
 
-def prime_check():
+def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no"')
     while True:
         number = randint(1, 1000)
@@ -22,6 +22,3 @@ def prime_check():
         right_answer = 'yes' if is_prime(number) else 'no'
         if user_answer == right_answer:
             print('Correct!')
-
-def main():
-    prime_check()
