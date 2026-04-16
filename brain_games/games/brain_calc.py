@@ -1,6 +1,6 @@
 from random import randint
 from random import choice
-from hexlet_projects.brain_games.scripts.cli import welcome_user
+from brain_games.cli import welcome_user
 
 name = welcome_user()
 
@@ -11,11 +11,9 @@ def main():
     example = [0, 'x', 0]
     symbols = ['+', '-', '*', '/']
     while counter < 3:
-        for i in range(0,3):
-            if i == 0 or i == 2:
-                i = randint(1,1000)
-            else:
-                i = choice(symbols)
+        example[0] = randint(1,50)
+        example[2] = randint(1, 50)
+        example[1] = choice(symbols)
         op = example[1]
         if op == '+':
             right_answer = example[0] + example[2]
@@ -24,7 +22,8 @@ def main():
         elif op == '*':
             right_answer = example[0] * example[2]
         else:
-            right_answer = example[0] / example[2]
+            example[0] = example[0] * example[2]
+            right_answer = example[0] // example[2]
         print(f'Question: {example[0]} {example[1]} {example[2]}')
         user_answer = int(input())
         if user_answer == right_answer and counter < 2:

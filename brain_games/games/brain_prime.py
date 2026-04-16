@@ -1,5 +1,5 @@
 from random import randint
-from hexlet_projects.brain_games.scripts.cli import welcome_user
+from brain_games.cli import welcome_user
 
 
 name = welcome_user()
@@ -22,3 +22,6 @@ def main():
         right_answer = 'yes' if is_prime(number) else 'no'
         if user_answer == right_answer:
             print('Correct!')
+        elif user_answer == 'exit':
+            print(f'You found the secret button, see you next time, {name}!')
+            break

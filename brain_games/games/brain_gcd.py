@@ -1,5 +1,5 @@
 from random import randint
-from hexlet_projects.brain_games.scripts.cli import welcome_user
+from brain_games.cli import welcome_user
 
 
 name = welcome_user()
@@ -9,17 +9,13 @@ def main():
     print(f'Find the greatest common divisor of given numbers.')
     counter = 0
     while counter < 3:
-        numbers = [randint(1,1000), randint(1,1000)]
-        if numbers[0] > numbers[1]:
-            for i in range(numbers[1], 0):
-                if numbers[0] % i == 0 and numbers[1] % i == 0:
-                    right_answer = i
-        elif numbers[1] > numbers[0]:
-            for i in range(numbers[0], 0):
-                if numbers[1] % i == 0 and numbers[0] % i == 0:
-                    right_answer = i
-        else:
-            right_answer = numbers[0]
+        numbers = [randint(1,100), randint(1,100)]
+        a, b = numbers[0], numbers[1]
+        right_answer = 1
+        for i in range(min(a, b), 0, -1):
+            if a % i == 0 and b % i == 0:
+                right_answer = i
+                break
         print(f'Question: {numbers[0]} {numbers[1]}')
         user_answer = int(input())
         if user_answer == right_answer:

@@ -1,17 +1,17 @@
 from random import randint
-from hexlet_projects.brain_games.scripts.cli import welcome_user
+from brain_games.cli import welcome_user
 
 
 name = welcome_user()
 
 
 
-def currentElement():
+def current_element():
     start = randint(1,20)
     step = randint(1, 9)
-    progression = [start]
-    for index in range(1,9):
-        progression.append(start + step)
+    progression = []
+    for index in range(10):
+        progression.append(start + step * index)
     return progression
 
 
@@ -19,11 +19,11 @@ def main():
     print('What number is missing in the progression?')
     counter = 0
     while counter < 3:
-        progression = currentElement()
-        random = randint(0, 9)
+        progression = current_element()
+        random = randint(0, 8)
         right_answer = progression[random]
         progression[random] = '..'
-        question = ' '.join(progression)
+        question = ' '.join(map(str,progression))
         print(f"Question: {question}")
         user_answer = int(input())
         if user_answer == right_answer and counter < 2:
