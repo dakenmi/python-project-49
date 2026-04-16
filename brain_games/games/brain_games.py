@@ -1,4 +1,4 @@
-from cli import welcome_user
+from hexlet_projects.brain_games.scripts.cli import welcome_user
 
 
 def main():

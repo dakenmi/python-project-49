@@ -1,6 +1,6 @@
 from random import randint
 from random import choice
-from cli import welcome_user
+from hexlet_projects.brain_games.scripts.cli import welcome_user
 
 name = welcome_user()
 
