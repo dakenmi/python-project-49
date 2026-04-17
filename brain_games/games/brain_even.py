@@ -28,7 +28,7 @@ def main():
 
         else:
             print(f'{user_answer} is wrong answer ;(. Correct answer was {answer}.')
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
 
 
