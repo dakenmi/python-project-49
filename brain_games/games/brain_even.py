@@ -1,6 +1,6 @@
 from random import randint
-from brain_games.cli import welcome_user
 
+from brain_games.cli import welcome_user
 
 name = welcome_user()
 
@@ -27,7 +27,8 @@ def main():
                 print('Correct!')
 
         else:
-            print(f'{user_answer} is wrong answer ;(. Correct answer was {answer}.')
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             break
 

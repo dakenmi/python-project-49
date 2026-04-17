@@ -1,12 +1,12 @@
-from random import randint
-from random import choice
+from random import choice, randint
+
 from brain_games.cli import welcome_user
 
 name = welcome_user()
 
 
 def main():
-    print(f'What is the result of the expression?')
+    print('What is the result of the expression?')
     counter = 0
     example = [0, 'x', 0]
     symbols = ['+', '-', '*']
@@ -30,7 +30,8 @@ def main():
             print(f'Congratulations, {name}!')
             counter += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. "
+            f"Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
             break
 
