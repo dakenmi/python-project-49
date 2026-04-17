@@ -15,6 +15,8 @@ def main():
         else:
             answer = 'no'
 
+        print(f'Question: {number}')
+
         user_answer = input()
 
         if user_answer == answer:
