@@ -23,7 +23,6 @@ def main():
             trying += 1
             if trying == 3:
                 print(f'Congratulations, {name}!')
-                trying = 0
             else:
                 print('Correct!')
 
