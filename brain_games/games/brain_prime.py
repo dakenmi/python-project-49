@@ -14,7 +14,7 @@ def is_prime(n):
 
 
 def main():
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while True:
         number = randint(1, 1000)
         print(f'Question: {number}')
