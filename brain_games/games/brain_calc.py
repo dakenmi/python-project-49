@@ -9,7 +9,7 @@ def main():
     print(f'What is the result of the expression?')
     counter = 0
     example = [0, 'x', 0]
-    symbols = ['+', '-', '*', '/']
+    symbols = ['+', '-', '*']
     while counter < 3:
         example[0] = randint(1,50)
         example[2] = randint(1, 50)
@@ -19,11 +19,8 @@ def main():
             right_answer = example[0] + example[2]
         elif op == '-':
             right_answer = example[0] - example[2]
-        elif op == '*':
-            right_answer = example[0] * example[2]
         else:
-            example[0] = example[0] * example[2]
-            right_answer = example[0] // example[2]
+            right_answer = example[0] * example[2]
         print(f'Question: {example[0]} {example[1]} {example[2]}')
         user_answer = int(input())
         if user_answer == right_answer and counter < 2:
