@@ -27,10 +27,8 @@ def main():
         elif user_answer != right_answer:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
             break
-        else:
-            print(f'Congratulations, {name}!')
-            break
-
+    if counter == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == "__main__":
