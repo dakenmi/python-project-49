@@ -25,3 +25,7 @@ def main():
         elif user_answer == 'exit':
             print(f'You found the secret button, see you next time, {name}!')
             break
+
+
+if __name__ == "__main__":
+    main()

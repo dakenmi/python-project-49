@@ -30,3 +30,6 @@ def main():
             print(f"Let's try again, {name}!")
             break
 
+
+if __name__ == "__main__":
+    main()

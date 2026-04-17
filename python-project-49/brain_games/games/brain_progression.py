@@ -22,7 +22,7 @@ def main():
         progression = current_element()
         random = randint(0, 8)
         right_answer = progression[random]
-        progression[random] = '..'
+        progression[int(random)] = '..'
         question = ' '.join(map(str,progression))
         print(f"Question: {question}")
         user_answer = int(input())
@@ -36,3 +36,7 @@ def main():
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
             break
+
+
+if __name__ == "__main__":
+    main()
