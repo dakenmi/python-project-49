@@ -7,5 +7,6 @@ def welcome_user():
     print(f'Hello, {name}!')
     return name
 
+
 def main():
     welcome_user()

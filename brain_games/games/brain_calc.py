@@ -11,7 +11,7 @@ def main():
     example = [0, 'x', 0]
     symbols = ['+', '-', '*']
     while counter < 3:
-        example[0] = randint(1,50)
+        example[0] = randint(1, 50)
         example[2] = randint(1, 50)
         example[1] = choice(symbols)
         op = example[1]

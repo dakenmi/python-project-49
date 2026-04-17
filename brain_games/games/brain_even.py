@@ -4,11 +4,12 @@ from brain_games.cli import welcome_user
 
 name = welcome_user()
 
+
 def main():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     trying = 0
     while trying < 3:
-        number = randint(1,1000)
+        number = randint(1, 1000)
         print(number)
         if number % 2 == 0:
             answer = 'yes'

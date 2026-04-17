@@ -4,6 +4,7 @@ from brain_games.cli import welcome_user
 
 name = welcome_user()
 
+
 def is_prime(n):
     if n < 2:
         return False

@@ -9,7 +9,7 @@ def main():
     print('Find the greatest common divisor of given numbers.')
     counter = 0
     while counter < 3:
-        numbers = [randint(1,100), randint(1,100)]
+        numbers = [randint(1, 100), randint(1, 100)]
         a, b = numbers[0], numbers[1]
         right_answer = 1
         for i in range(min(a, b), 0, -1):

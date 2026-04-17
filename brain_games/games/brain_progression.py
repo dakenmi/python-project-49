@@ -5,9 +5,8 @@ from brain_games.cli import welcome_user
 name = welcome_user()
 
 
-
 def current_element():
-    start = randint(1,20)
+    start = randint(1, 20)
     step = randint(1, 9)
     progression = []
     for index in range(10):
@@ -23,7 +22,7 @@ def main():
         random = randint(0, 8)
         right_answer = progression[random]
         progression[int(random)] = '..'
-        question = ' '.join(map(str,progression))
+        question = ' '.join(map(str, progression))
         print(f"Question: {question}")
         user_answer = int(input())
         if user_answer == right_answer and counter < 2:
