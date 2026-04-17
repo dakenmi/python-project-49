@@ -15,16 +15,22 @@ def is_prime(n):
 
 def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    while True:
+    counter = 0
+    while counter < 3:
         number = randint(1, 1000)
         print(f'Question: {number}')
         user_answer = input()
         right_answer = 'yes' if is_prime(number) else 'no'
-        if user_answer == right_answer:
+        if user_answer == right_answer and counter < 3:
             print('Correct!')
-        elif user_answer == 'exit':
-            print(f'You found the secret button, see you next time, {name}!')
+            counter += 1
+        elif user_answer != right_answer:
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
             break
+        else:
+            print(f'Congratulations, {name}!')
+            break
+
 
 
 if __name__ == "__main__":
