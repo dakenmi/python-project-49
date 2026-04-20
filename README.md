@@ -3,10 +3,10 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=dakenmi_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=dakenmi_python-project-49)
 ### Demo links:
 make lint, make brain-games, make brain-even:
-
-make brain-gcd:
-make brain-progression:
-make brain-prime:
+https://asciinema.org/a/u6DQw7YfJyEGANV7
+make brain-gcd: https://asciinema.org/a/ELFAofkBLOWwQMdP
+make brain-progression: https://asciinema.org/a/2JK4KNH4cFJL3ja9
+make brain-prime: https://asciinema.org/a/8SHiUPEXX9Dq8s3X
 ### Brain Games
 Hexlet tests and linter status: 
 Actions Status Maintainability
